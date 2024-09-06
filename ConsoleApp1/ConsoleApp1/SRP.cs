@@ -31,13 +31,15 @@ namespace ConsoleApp1
             //not own responsibility
             public void SaveEmployee()
             {
-
+                var empRepo = new EmpRepository();
+                empRepo.Save(this);
             }
 
             //not own responsibility
             public void SendWelcomeEmail()
             {
-
+                var emailNotif = new EmailNotifier();
+                emailNotif.SendWelcomeEmail(this);
             }
 
             //SaveEmployee and SendWelcomeEmail are not the jpb of Employee class,

@@ -36,7 +36,7 @@ namespace ConsoleApp1
             void Log();
         }
 
-        public class FileLogger1ILogger
+        public class FileLogger1:ILogger
         {
             public void Log()
             {
